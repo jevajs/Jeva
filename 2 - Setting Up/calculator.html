@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+
+        <input id="num1" placeholder="Number 1">
+        <form>
+            <select id="operation">
+                <option>+</option> <!-- Addition -->
+                <option>-</option> <!-- Subtract -->
+                <option>*</option> <!-- Multiply -->
+                <option>/</option> <!-- Divide -->
+            </select>
+        </form>
+        <input id="num2" placeholder="Number 2">
+        <button onclick="calculate();">Calculate!</button>
+        <p id="output"></p>
+        <script>
+            function calculate() {
+                var num1 = parseInt(document.getElementById("num1").value);
+                var num2 = parseInt(document.getElementById("num2").value);
+                
+                if(!num1 || !num2) {
+                    return alert("Please provide numbers in both fields")
+                }
+                
+
+                var operation = document.getElementById("operation").value;
+                switch (operation) {
+                    case "+":
+                        document.getElementById("output").innerHTML = num1 + num2
+                    break;
+                    case "-":
+                        document.getElementById("output").innerHTML = num1 - num2
+                    break;
+                    case "*":
+                        document.getElementById("output").innerHTML = num1 * num2
+                    break;
+                    case "/":
+                        document.getElementById("output").innerHTML = num1 / num2
+                    break;
+                }
+                
+
+            }
+        </script>
+    </body>
+</html>
