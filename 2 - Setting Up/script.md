@@ -1,6 +1,9 @@
 # 2 - Setting up a JS and HTML document | Making a Very Simple Calculator
 **A Step by Step Guide on how to make a very easy calculator using html and javascript basics**
 
+* [Discord](https://discord.gg/72vGX2N)
+* Guide created by [Zua](https://github.com/thatziv) at Jeva
+
 1. Introduction (How to setup a javascript environment in a browser using html)
 2. Setup the HTML Document.
 ```html
