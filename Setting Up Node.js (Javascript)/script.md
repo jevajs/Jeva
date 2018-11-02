@@ -11,18 +11,18 @@ _____________
 # Guide
 1. Download [nodejs](https://nodejs.org) (current)
   - Setup nodejs
-  - [img](https://raw.githubusercontent.com/jevajs/Jeva/master/Setting%20Up%20Node.js%20(Javascript)/1.png)
+  - ![img](https://raw.githubusercontent.com/jevajs/Jeva/master/Setting%20Up%20Node.js%20(Javascript)/1.png)
   - If on linux; to install:
   ```bash
   sudo apt-get install -y node.js
   ```
 2. Restart Computer *if necessary*
 3. Make a new folder (anywhere)
-  - [img](https://raw.githubusercontent.com/jevajs/Jeva/master/Setting%20Up%20Node.js%20(Javascript)/3.png)
+  - ![img](https://raw.githubusercontent.com/jevajs/Jeva/master/Setting%20Up%20Node.js%20(Javascript)/3.png)
 4. Open your shell *In your new folder preferably*
   - Command Prompt for windows
   - Terminal for Linux/Mac
-  - [img](https://raw.githubusercontent.com/jevajs/Jeva/master/Setting%20Up%20Node.js%20(Javascript)/4.png)
+  - ![img](https://raw.githubusercontent.com/jevajs/Jeva/master/Setting%20Up%20Node.js%20(Javascript)/4.png)
 5. `cd` into the new directory (folder) using:
   ```bash
   cd folder
@@ -30,15 +30,15 @@ _____________
   cd directory/folder
   ```
   Where folder is your new folder's name and the directory representing the directory to your folder
-  -[img](https://raw.githubusercontent.com/jevajs/Jeva/master/Setting%20Up%20Node.js%20(Javascript)/5.png)
+  - ![img](https://raw.githubusercontent.com/jevajs/Jeva/master/Setting%20Up%20Node.js%20(Javascript)/5.png)
 6. Now, type in
   ```bash
   npm init
   ```
-  - [img](https://raw.githubusercontent.com/jevajs/Jeva/master/Setting%20Up%20Node.js%20(Javascript)/6.png)
+  - ![img](https://raw.githubusercontent.com/jevajs/Jeva/master/Setting%20Up%20Node.js%20(Javascript)/6.png)
   and follow the prompts, then hit enter for *yes*
 7. Create a Javascript file where your `package.json` is located (`index.js` by default)
-  - [img](https://raw.githubusercontent.com/jevajs/Jeva/master/Setting%20Up%20Node.js%20(Javascript)/7.png)
+  - ![img](https://raw.githubusercontent.com/jevajs/Jeva/master/Setting%20Up%20Node.js%20(Javascript)/7.png)
 8. Open the Javascript file (using the code editor) and now we can do a simple program **in the index.js**. ex:
   ```js
   // index.js
@@ -48,7 +48,7 @@ _____________
 ```bash
 node index.js
 ```
-[img](https://raw.githubusercontent.com/jevajs/Jeva/master/Setting%20Up%20Node.js%20(Javascript)/9.png)
+![img](https://raw.githubusercontent.com/jevajs/Jeva/master/Setting%20Up%20Node.js%20(Javascript)/9.png)
 
 ## Great Job! You successfully installed node and made your first program in node.js.
 Make sure to subscribe to Jeva and join our discord!
