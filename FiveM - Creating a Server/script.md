@@ -5,6 +5,7 @@
 
 **Requirements**
 - Decent Internet
+- [Visual C++ redistributable](https://go.microsoft.com/fwlink/?LinkId=746572)
 - Probably more things I can't think of
 
 # Guide
