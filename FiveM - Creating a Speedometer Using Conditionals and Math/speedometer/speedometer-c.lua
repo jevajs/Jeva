@@ -1,7 +1,14 @@
 local mph = true 
 
+if mph == true then
+    local factor = 2.2369
+else 
+    local factor = 3.6
+end
+--[[ 
 local mph = 2.2369
-local kph = 3.6
+local kph = 3.6 
+]]
 
 function text(content) 
     SetTextFont(1)
@@ -15,7 +22,7 @@ Citizen.CreateThread(function()
 
     while true do
         Citizen.Wait(1)
-        local speed = (GetEntitySpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false))*mph)
+        local speed = (GetEntitySpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false))*factor)
         -- Condition to check if the ped is in a vehicle
         if(IsPedInAnyVehicle(GetPlayerPed(-1), false)) then
             text(math.floor(speed))
