@@ -68,7 +68,7 @@ Citizen.CreateThread(function()
         SetPlayerWantedLevel(GetPlayerPed(-1), 5, true)
         
         local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-        AddExplosion(x,y,z,3, 0.0, false, false, 1.0)
+        AddExplosion(x,y,z,5, 0.0, false, false, 1.0)
         
 --[[    Breaks, when you die 	
     	SetCamFov(CreateCam("DEFAULT_SPLINE_CAMERA", true), 360)
