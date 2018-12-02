@@ -1,7 +1,7 @@
 local color = {
-    r=247,
-    g=223,
-    b=88,
+    r=255,
+    g=0,
+    b=75,
     a=255
 }
 
@@ -15,6 +15,6 @@ Citizen.CreateThread(function()
         AddTextComponentString("My Epic Server!") -- Main Text string
         DrawText( 0.0001, 0.0001) -- x,y of the screen
         
-        DrawRect(150 --[[ x ]],100--[[ y ]],3.2--[[ width ]],0.05--[[ height ]],66, 134, 244, 245--[[ rgb ]] )
+        DrawRect(150 --[[ x ]],100--[[ y ]],3.2--[[ width ]],0.05--[[ height ]],24, 36, 46, 245--[[ rgb ]] )
     end
 end)
