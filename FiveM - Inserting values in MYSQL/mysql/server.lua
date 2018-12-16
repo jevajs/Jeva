@@ -5,7 +5,7 @@ RegisterCommand("save", function(source, args)
         (id, name, args)
         These are the columns (in our database) we will be insterting the data into  
     ]]
-        {['@source'] = source, ['@name'] = GetPlayerName(source), ['@args'] = argString}, 
+    {["@source"] = GetPlayerIdentifiers(source)[1], ["@name"] = GetPlayerName(source), ["@args"] = argString},
         --[[ 
             Here we are defining the '@' variables to in-game native functions
          ]]
