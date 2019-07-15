@@ -23,10 +23,12 @@ $(function () {
     document.onkeyup = function (data) {
         if (data.which == 27) {
             $.post('http://nui2/exit', JSON.stringify({}));
+            return
         }
     };
     $("#close").click(function () {
         $.post('http://nui2/exit', JSON.stringify({}));
+        return
     })
     //when the user clicks on the submit button, it will run
     $("#submit").click(function () {
