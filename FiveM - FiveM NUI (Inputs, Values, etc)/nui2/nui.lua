@@ -25,7 +25,7 @@ end)
 function SetDisplay(bool)
     display = bool
     SetNuiFocus(bool, bool)
-    SendNUIMessage({
+    SendNuiMessage({
         type = "ui",
         status = bool,
     })
