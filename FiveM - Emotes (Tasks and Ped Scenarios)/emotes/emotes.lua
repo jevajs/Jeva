@@ -33,3 +33,10 @@ emotes['yoga'] = {name = 'yoga', anim = 'WORLD_HUMAN_YOGA'}
 emotes['kneel'] = {name = 'kneel', anim = 'CODE_HUMAN_MEDIC_KNEEL'}
 emotes['crowdcontrol'] = {name = 'crowdcontrol', anim = 'CODE_HUMAN_POLICE_CROWD_CONTROL'}
 emotes['investigate'] = {name = 'investigate', anim = 'CODE_HUMAN_POLICE_INVESTIGATE'}
+--[[ 
+    What this will look like after the code above is ran
+    emotes = {
+        "cop"= {name = 'cop', anim = 'WORLD_HUMAN_COP_IDLES'}
+        ...
+    }
+ ]]
