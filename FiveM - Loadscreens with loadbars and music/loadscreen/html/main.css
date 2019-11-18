@@ -7,10 +7,6 @@
     background-color: #131e29;
 }
 
-.txt { 
-    color: #eee;
-    font-size: 30px;
-}
 
 .container {
     position: fixed;
@@ -21,7 +17,7 @@
 
 .loadbar {
     width: 100%;
-    background-color: #FC0349;
+    background-color: #eee;
     height: 20px;
 
     margin-left: 2px;
@@ -40,7 +36,7 @@
 
 .progressBar {
     width: 10%;
-    background-color: #eee;
+    background-color: #FC0349;
     height: 20px;
 
     position: absolute;
