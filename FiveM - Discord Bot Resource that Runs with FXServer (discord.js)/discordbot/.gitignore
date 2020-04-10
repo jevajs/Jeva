@@ -1,0 +1,10 @@
+# i would've used dotenv but this fork of nodejs
+# doesn't support it
+#
+# create a blank file of the config.json template using this
+# {
+#   "token" : "Your token"
+# }
+config.json
+/node_modules
+/.vscode
