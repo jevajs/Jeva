@@ -16,7 +16,7 @@ module.exports = {
         setInterval(function setStatus() {
             status = `${GetNumPlayerIndices()} player(s)`
             //console.log(status)
-            client.user.setActivity(status)
+            client.user.setActivity(status, {type: 'WATCHING'})
             return setStatus;
         }(), seconds * 1000)
     }
