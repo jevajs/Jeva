@@ -5,6 +5,7 @@
 # {
 #   "token" : "Your token"
 # }
+# get one from here https://discordapp.com/developers/applications
 config.json
 /node_modules
 /.vscode
