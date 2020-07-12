@@ -5,7 +5,7 @@ RegisterCommand(
         if category == "spawn" then
             local vehicle = args[2]
             local carPaint = colors.metal["Pure Gold"]
-            local veh = spawnVeh(vehicle)
+            local veh = spawnVeh(vehicle, true)
             print(string.format("Spawned in a(n) %s.", GetLabelText(GetDisplayNameFromVehicleModel(vehicle))))
             SetVehicleColours(veh, carPaint, carPaint)
         elseif category == "customize" then
@@ -16,14 +16,14 @@ RegisterCommand(
                 -- to loop through ALL customizations 
                 -- the first 10 iterations will
                 -- apply body features
-                local bestMod = GetNumVehicleMods(veh, i) 
+                local bestMod = GetNumVehicleMods(veh, modType)
                 SetVehicleMod(veh, modType, bestMod, false)
             end
         elseif category == "extras" then
             local veh = GetVehiclePedIsIn(PlayerPedId(), false)
             for id=0, 20 do
                 if DoesExtraExist(veh, id) then
-                    SetVehicleExtra(veh, id, 1) -- p3 should be 0 for off and 1 for on
+                    SetVehicleExtra(veh, id, 1) -- p3 should be 0 for off or 1 for on
                 end
             end
         elseif category == "repair" then
@@ -79,12 +79,5 @@ RegisterCommand(
         end
     end
 )
-function ApplyVehicleMod(vehicle, modType, mod)
-    if type(mod) == "boolean" then
-        ToggleVehicleMod(vehicle, modType, mod)
-    else
-        SetVehicleMod(vehicle, modType, mod, false)
-    end
-end
 
 
