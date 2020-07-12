@@ -16,7 +16,7 @@ RegisterCommand(
                 -- to loop through ALL customizations 
                 -- the first 10 iterations will
                 -- apply body features
-                local bestMod = GetNumVehicleMods(veh, modType)
+                local bestMod = GetNumVehicleMods(veh, modType)-1 -- we will subtract by one to notice differences easier (imo)
                 SetVehicleMod(veh, modType, bestMod, false)
             end
         elseif category == "extras" then
