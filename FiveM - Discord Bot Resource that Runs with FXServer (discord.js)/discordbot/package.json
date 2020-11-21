@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "github:vecchiotom/discord.js"
+    "discord.js": "^11.6.4"
   }
 }
