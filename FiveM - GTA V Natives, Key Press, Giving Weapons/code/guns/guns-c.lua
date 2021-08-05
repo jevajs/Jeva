@@ -1,4 +1,3 @@
-
 RegisterCommand("clear", function()
     RemoveAllPedWeapons(GetPlayerPed(-1), true)
     notify('~r~Cleared All Weapons.')
@@ -12,8 +11,8 @@ Citizen.CreateThread(function()
             giveWeapon("weapon_pistol")
             giveWeapon("weapon_knife")
             alert("~b~Given weapons with ~INPUT_VEH_HEADLIGHT~")
-        end
-        if IsControlJustReleased(1,  x_key --[[ X key ]]) then
+
+        elseif IsControlJustReleased(1,  x_key --[[ X key ]]) then
             giveWeapon("weapon_combatmg")
             alert("~g~Given weapons with ~INPUT_VEH_DUCK~")
         end
