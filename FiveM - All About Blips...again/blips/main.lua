@@ -30,7 +30,7 @@ RegisterCommand(
 RegisterCommand(
     "bliptome",
     function(source, args)
-        local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1)))
+        local x, y, z = table.unpack(GetEntityCoords(PlayerPedId()))
         TriggerServerEvent("blips:takeBlip", x, y, z)
     end
 )
