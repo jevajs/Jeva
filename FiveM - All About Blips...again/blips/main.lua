@@ -1,5 +1,6 @@
 blip = nil
-function initializeBlip()
+
+Citizen.CreateThread(function()
     local blipName = "Pier"
     local blipCoords = landmarks[blipName] -- "landmark" var is referred to in "coords.lua"
     blip = AddBlipForCoord(blipCoords.x, blipCoords.y, blipCoords.z) -- Blip ADD_BLIP_FOR_COORD(float x, float y, float z);
@@ -15,9 +16,7 @@ function initializeBlip()
     SetBlipCategory(blip, 2) -- void SET_BLIP_CATEGORY(Blip blip, int index);, where the index=2: shows the distance you are away from the blip
     EndTextCommandSetBlipName(blip) -- void END_TEXT_COMMAND_SET_BLIP_NAME(Blip blip);
     print("Blip int: " .. blip)
-end
-
-Citizen.CreateThread(initializeBlip) -- does not need to be done every frame, just once
+end) -- does not need to be done every frame, just once
 
 RegisterCommand(
     "removeblip",
