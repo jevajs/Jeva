@@ -35,10 +35,7 @@ RegisterCommand(
     end
 )
 
-RegisterNetEvent("blips:setBlip")
-AddEventHandler(
-    "blips:setBlip",
-    function(x, y, z)
+RegisterNetEvent("blips:setBlip", function(x, y, z)
         if DoesBlipExist(blip) and x ~= nil then
             SetBlipCoords(blip, x, y, z) -- void SET_BLIP_COORDS(Blip blip, float posX, float posY, float posZ);
             SetBlipAsShortRange(blip, true) -- void SET_BLIP_AS_SHORT_RANGE(Blip blip, BOOL toggle);
