@@ -36,7 +36,8 @@ RegisterCommand(
     end
 )
 
-RegisterNetEvent(
+RegisterNetEvent("blips:setBlip")
+AddEventHanlder(
     "blips:setBlip",
     function(x, y, z)
         if DoesBlipExist(blip) and x ~= nil then

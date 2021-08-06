@@ -1,4 +1,4 @@
-fx_version 'cerulean' -- Currently compatible with my server version: 620820541, build: ~1600 approx.
+fx_version 'bodacious' -- Currently compatible with my server version: 620820541, build: ~1600 approx.
 game 'gta5'
 
 author 'Zua - https://github.com/thatziv @ https://github.com/jevajs'
