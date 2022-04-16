@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "13d6a82b-5ce8-4f81-aed8-5068975325c9",
+		"name": "Messaging API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authors",
+			"item": [
+				{
+					"name": "Get All Authors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/author",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"author"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Entries by Author",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/author/Zua",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"author",
+								"Zua"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Messages",
+			"item": [
+				{
+					"name": "Create Message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "content",
+									"value": "My message",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/message/create?author=Zua",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"message",
+								"create"
+							],
+							"query": [
+								{
+									"key": "author",
+									"value": "Zua"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Messages",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "content",
+									"value": "Hello, this is my entry to the messages API.",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/message",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Message",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/message/3cdbcfd5c6809972770b9b52a0dcd702bf117560f68e5b3450ceddbb9aa72fce",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"message",
+								"3cdbcfd5c6809972770b9b52a0dcd702bf117560f68e5b3450ceddbb9aa72fce"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Message",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "content",
+									"value": "My updated message!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/message/3cdbcfd5c6809972770b9b52a0dcd702bf117560f68e5b3450ceddbb9aa72fce?author=Zua",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"message",
+								"3cdbcfd5c6809972770b9b52a0dcd702bf117560f68e5b3450ceddbb9aa72fce"
+							],
+							"query": [
+								{
+									"key": "author",
+									"value": "Zua"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Message",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/message/3cf3049c824d5e2afe1bab0204bd904235fc3af241908d987d5e852201e0eda6?author=Zua",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"message",
+								"3cf3049c824d5e2afe1bab0204bd904235fc3af241908d987d5e852201e0eda6"
+							],
+							"query": [
+								{
+									"key": "author",
+									"value": "Zua"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:5000/api",
+			"type": "string"
+		}
+	]
+}
