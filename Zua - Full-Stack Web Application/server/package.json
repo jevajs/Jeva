@@ -4,7 +4,8 @@
   "description": "This project demonstrates how a REST API (backend) works with the frontend.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "media": "cd ../media && dev"
   },
   "keywords": [],
   "author": "",
