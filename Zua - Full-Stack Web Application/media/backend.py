@@ -87,4 +87,14 @@ class SquareToCircle(Scene):
             reqText2, shift=RIGHT), FadeIn(resText2, shift=LEFT))
         self.play(FadeOut(resText2), FadeOut(response))
         self.wait(5)
+        self.play(FadeIn(request, shift=DOWN), FadeIn(reqText2, shift=LEFT))
+        self.wait(5)
+        dot = Dot().move_to(backend)
+        
+        self.play(GrowFromCenter(dot), dot.animate.move_to(backend.get_edge_center(RIGHT)))
+        self.play(FadeTransform(request, response), FadeOut(
+            reqText2, shift=RIGHT), FadeIn(resText2, shift=LEFT), MoveAlongPath(dot, backend), run_time=3, rate_func=smooth)
+        self.play(dot.animate.move_to(backend), ShrinkToCenter(dot), run_time=2)
+        self.wait(3)
+        
         
